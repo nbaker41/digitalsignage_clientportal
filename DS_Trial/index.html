@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta>
+<link href="sass/styles.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto+Slab:300,400,500,700|Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="script.js"></script>
+</head>
+<body>
+
+<h1> Trial </h1>
+<!--first panel links remember to clean up classes-->
+<div class="tab">
+  <div class="header">Channels</div>
+  <button class="tablinks" onclick="openAlbum(event, 'MediaAlbum1'); openPan(event, 'Media1')" id="defaultOpen">Channel 1 
+	<select class="zone">
+	<option>Zone 1</option>
+	<option>Zone 2</option>
+	</select>
+</button> 
+  <button class="tablinks" onclick="openAlbum(event, 'MediaAlbum2'); openPan(event, 'Media2')">Channel 2
+	<select class="zone">
+		<option>Zone 1</option>
+		<option>Zone 2</option>
+		</select>
+</button>
+  <button class="tablinks" onclick="openAlbum(event, 'MediaAlbum3'); openPan(event, 'Media3')">Channel 3
+	<select class="zone">
+		<option>Zone 1</option>
+		<option>Zone 2</option>
+		</select>
+</button>
+</div>
+
+
+
+<!--second panel links-->
+<div class="pan">
+<div class="header">Media <a><img src="icons/add_button.svg" width="15px"></a></div>
+
+<!--connects to first link in panel 1-->
+<div id="MediaAlbum1" class="tabcontent">
+    <div class="tab2">
+		<button class="tablinks" onclick="openPan(event,'Media1')" id="defaultOpen0">Media Album <input type="radio" name="select" value="option1" class="radio"></button>
+		<button class="tablinks" onclick="openPan(event,'Media4')">image.png<input type="radio" name="select" value="option1" class="radio"></button>
+	</div>	
+</div>
+<!--connects to second link in panel 1-->
+<div id="MediaAlbum2" class="tabcontent">
+    <div class="tab2">
+        <button class="tablinks" onclick="openPan(event,'Media2')">Media Album2  <input type="radio" name="select" value="option1" class="radio"></button>
+	</div>
+</div>
+<!--connects to third link in panel 1-->
+<div id="MediaAlbum3" class="tabcontent">
+  <div class="tab2">
+	  <button class="tablinks" onclick="openPan(event,'Media3')">Media Album3  <input type="radio" name="select" value="option1" class="radio"></button>
+	</div>
+</div>
+
+</div>
+
+
+
+<!--third panel links-->
+<div class="pan">
+	<div class="header">Content <a><img src="icons/save.svg" width="20px"></a><a><img src="icons/organizer.svg" width="20px"></a><a><img src="icons/add_button.svg" width="20px"><a/></div>
+
+	 <div id="Media1" class="tabcontent2">
+		<!--container for content info-->
+		<div class="tablinks2">
+			<!--info for content-->
+			<div class="media">
+				<img class="placeholder" src="images/placeholder.png" width="150" height="150">
+				<div  class="info">
+					<div class="desc">
+						<p>File Name:</p>
+						<p>File Size:</p>
+						<p>Date Added:</p>
+						<p>Dimensions:</p>
+			
+						
+						<a href="" ><img src="icons/calendar.svg" width="30px" height="30px" class="cal" ></a>
+						<a href=""><img src="icons/clock.svg" width="30px" height="30px" class="clock" ></a>
+					</div>
+					<div class="sidicons">
+						<input  type="radio" name="select" value="option1" class="radio1"><br>
+						<a href=""><img src="icons/download.svg" width="30px" height="30px" class="dload"></a><br>
+						<a href=""><img src="icons/exit.svg" width="30px" height="30px" class="delete"></a>
+					</div>
+				</div>
+			<!--end of media class-->
+			</div>
+		<!--end of tablinks2 class-->
+		</div>
+
+
+		<!--container for content info-->
+		<div class="tablinks2">
+			<!--info for content-->
+			<div class="media">
+				<img class="placeholder" src="images/placeholder.png" width="150" height="150">
+				<div  class="info">
+					<div class="desc">
+						<p>File Name:</p>
+						<p>File Size:</p>
+						<p>Date Added:</p>
+						<p>Dimensions:</p>
+			
+						
+						<a href="" ><img src="icons/calendar.svg" width="30px" height="30px" class="cal" ></a>
+						<a href=""><img src="icons/clock.svg" width="30px" height="30px" class="clock" ></a>
+					</div>
+					<div class="sidicons">
+						<input  type="radio" name="select" value="option1" class="radio1"><br>
+						<a href=""><img src="icons/download.svg" width="30px" height="30px" class="dload"></a><br>
+						<a href=""><img src="icons/exit.svg" width="30px" height="30px" class="delete"></a>
+					</div>
+				</div>
+			<!--end of media class-->
+			</div>
+		<!--end of tablinks2 class-->
+		</div>
+		
+
+		
+		<!--container for content info-->
+		<div class="tablinks2">
+			<!--info for content-->
+			<div class="media">
+				<img class="placeholder" src="images/placeholder.png" width="150" height="150">
+				<div  class="info">
+					<div class="desc">
+						<p>File Name:</p>
+						<p>File Size:</p>
+						<p>Date Added:</p>
+						<p>Dimensions:</p>
+			
+						
+						<a href="" ><img src="icons/calendar.svg" width="30px" height="30px" class="cal" ></a>
+						<a href=""><img src="icons/clock.svg" width="30px" height="30px" class="clock" ></a>
+					</div>
+					<div class="sidicons">
+						<input  type="radio" name="select" value="option1" class="radio1"><br>
+						<a href=""><img src="icons/download.svg" width="30px" height="30px" class="dload"></a><br>
+						<a href=""><img src="icons/exit.svg" width="30px" height="30px" class="delete"></a>
+					</div>
+				</div>
+			<!--end of media class-->
+			</div>
+		<!--end of tablinks2 class-->
+		</div>
+
+		<!--container for content info-->
+		<div class="tablinks2">
+			<!--info for content-->
+			<div class="media">
+				<img class="placeholder" src="images/placeholder.png" width="150" height="150">
+				<div  class="info">
+					<div class="desc">
+						<p>File Name:</p>
+						<p>File Size:</p>
+						<p>Date Added:</p>
+						<p>Dimensions:</p>
+			
+						
+						<a href="" ><img src="icons/calendar.svg" width="30px" height="30px" class="cal" ></a>
+						<a href=""><img src="icons/clock.svg" width="30px" height="30px" class="clock" ></a>
+					</div>
+					<div class="sidicons">
+						<input  type="radio" name="select" value="option1" class="radio1"><br>
+						<a href=""><img src="icons/download.svg" width="30px" height="30px" class="dload"></a><br>
+						<a href=""><img src="icons/exit.svg" width="30px" height="30px" class="delete"></a>
+					</div>
+				</div>
+			<!--end of media class-->
+			</div>
+		<!--end of tablinks2 class-->
+		</div>
+	</div>
+
+	
+	<div id="Media4" class="tabcontent2">
+		<!--container for content info-->
+		<div class="tablinks2">
+			<!--info for content-->
+			<div class="media">
+				<img class="placeholder" src="images/placeholder.png" width="150" height="150">
+				<div  class="info">
+					<div class="desc">
+						<p>File Name:</p>
+						<p>File Size:</p>
+						<p>Date Added:</p>
+						<p>Dimensions:</p>
+			
+						
+						<a href="" ><img src="icons/calendar.svg" width="30px" height="30px" class="cal" ></a>
+						<a href=""><img src="icons/clock.svg" width="30px" height="30px" class="clock" ></a>
+						<a href=""><img src="icons/download.svg" width="30px" height="30px" class="dload"></a>
+						
+					</div>
+				</div>
+			<!--end of media class-->
+			</div>
+		<!--end of tablinks2 class-->
+		</div>
+	</div>
+	
+    <div id="Media2" class="tabcontent2">
+		<!--container for content info-->
+		<div class="tablinks2">
+			<!--info for content-->
+			<div class="media">
+				<img class="placeholder" src="images/placeholder.png" width="150" height="150">
+				<div  class="info">
+					<div class="desc">
+						<p>File Name:</p>
+						<p>File Size:</p>
+						<p>Date Added:</p>
+						<p>Dimensions:</p>
+			
+						
+						<a href="" ><img src="icons/calendar.svg" width="30px" height="30px" class="cal" ></a>
+						<a href=""><img src="icons/clock.svg" width="30px" height="30px" class="clock" ></a>
+						
+					</div>
+				</div>
+			<!--end of media class-->
+			</div>
+		<!--end of tablinks2 class-->
+		</div>
+	</div>
+	<div id="Media3" class="tabcontent2">
+		<div class="tablinks2">
+			<div class="media">
+				<div><div class="placeholder"></div>
+				<ul class="info">
+					<li>File Name:</li>
+					<li>File Size:</li>
+					<li>Date Added:</li>
+					<li>Dimensions:</li>
+				</ul>
+				<div class="cal"><img src="icons/calendar.svg" width="30px" height="30px"></div>	
+				<div class="clock"><img src="icons/clock.svg" width="30px" height="30px"></div>
+				</div>
+				</div>
+	    </div>
+	</div>    
+</div>
+<script>
+	//opens panels 
+function openAlbum(evt, albumName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(albumName).style.display = "block";
+    evt.currentTarget.className += " active";
+
+
+}
+
+function openPan(evt, panName) {
+    var i, tabcontent2, tablinks2;
+    tabcontent2 = document.getElementsByClassName("tabcontent2");
+    for (i = 0; i < tabcontent2.length; i++) {
+        tabcontent2[i].style.display = "none";
+    }
+    tablinks2 = document.getElementsByClassName("tablinks2");
+    for (i = 0; i < tablinks2.length; i++) {
+        tablinks2[i].className = tablinks2[i].className.replace(" active", "");
+    }
+    document.getElementById(panName).style.display = "block";
+    evt.currentTarget.className += " active";
+
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+document.getElementById("defaultOpen0").click();
+</script>
+	
+</body>
+</html>

@@ -1,0 +1,167 @@
+* {box-sizing: border-box}
+body {font-family: "Roboto", sans-serif;}
+
+/*styles panel headers*/
+.header {
+  background:#b3a369;
+  font-weight:700;
+  padding: 10px 16px;
+  position:sticky;
+  position:-webkit-sticky;
+  top:0;
+  a{
+    float:right;
+    padding-left:10px;
+  }
+  .save{
+    padding-right:3px;
+    
+  }
+}
+//media zone dropdown menu
+.zone {
+  float:right;
+}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 500px;
+  button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px 22px;
+    width: 80%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+ p{
+    float:right;
+  }
+}
+.tablinks{
+    &:hover {
+        background-color:#ccc;
+}
+    &:active {
+        background-color:#ccc;
+    }
+}
+.pan{
+  border: 1px solid #ccc;
+  border-left: none;
+  width: 30%;
+  float: left;
+  height: 500px;
+  overflow:auto;
+/* Style the tab content */
+.tabcontent {
+  padding: 0px 12px;
+  
+}
+
+
+}
+
+
+.tab2 {
+    float: left;
+    width: 100%;
+    height: 500px;
+    button {
+      display: block;
+      background-color: inherit;
+      color: black;
+      padding: 22px 16px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+    
+  }
+  .tablinks2{
+  &:hover{
+    background-color: #f1f1f1;
+  }
+  &:active{
+    color: #b3a369;
+  }
+}
+
+.radio{
+float:right;
+}
+
+
+
+//panel 3: content
+.tablinks2 {
+  width: 100%;
+  height: 200px;
+  border: #ccc solid 1px;
+  padding: 25px 15px;
+
+  
+    .media{ 
+      clear:both;
+
+      .placeholder{
+        float:left;
+      }
+
+
+      .info{ 
+        padding-left:10px;
+        .desc{
+            float:left; 
+          }
+
+        .desc p{
+          font-size: 9pt;
+          padding-left:20px;
+        }
+
+        .cal{
+          margin-left:20px;
+          img{
+            float:left;
+            
+          }
+        }
+
+
+        .clock{
+          margin-left: 20px;
+          img{
+            float:left;
+            
+          }
+        }
+
+        .sidicons{
+          float:right;
+          .dload{
+            margin-top:35px;
+            margin-right:2px;
+          }
+          .delete{
+            clear:both;
+            margin-top:35px;
+          }
+        }
+      }
+
+  }
+}
